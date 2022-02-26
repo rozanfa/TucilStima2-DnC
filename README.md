@@ -6,7 +6,7 @@ Program ini berfungsi untuk mencari convex hull, yaitu himpunan convex terkecil 
 
 ## Requirement Program
 Python3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
-(Untuk menginstall library, gunakan command `pip install <nama-library>`)
+(Untuk menginstall library yang belum ada, gunakan command `pip install <nama-library>`)
 
 ## Cara Menggunakan Program
 Terdapat dua file yang dapat digunakan, yaitu file main.py dan main.ipynb
