@@ -12,7 +12,7 @@ Python 3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
 Terdapat dua file yang dapat digunakan, yaitu file main.py dan main.ipynb
 
 ### A. main.ipynb
-Buka file ipynb di VSCode ataupun aplikasi serupa, kemudian jalankan "kotak" pertama dan "kotak" kedua. Dataset yang digunakan bisa diganti pada code di baris kelima "kotak" pertama.
+Buka file main.ipynb di dalam folder src menggunakan VSCode ataupun aplikasi serupa, kemudian jalankan "kotak" pertama dan "kotak" kedua. Dataset yang digunakan bisa diganti pada code di baris kelima "kotak" pertama.
 
 ### B. main.py
 
