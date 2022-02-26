@@ -31,7 +31,7 @@ Dengan :
     3 : dataset breast cancer
 - arg2 : integer yang menyatakan kolom yang akan digunakan sebagai sumbu-x dari grafik
 - arg3 : integer yang menyatakan kolom yang akan digunakan sebagai sumbu-y dari grafik
-
+Jika tidak diberikan argumen, maka program akan berjalan dengan dataset default
 
 ## Author
 Rozan Fadhil Al Hafidz
