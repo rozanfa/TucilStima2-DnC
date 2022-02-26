@@ -5,7 +5,7 @@
 Program ini berfungsi untuk mencari convex hull, yaitu himpunan convex terkecil (convex polygon) yang mengandung seluruh titik yang menjadi bagiannya. Program ini menggunakan algoritma divide and conquer. Setelah menemukan seluruh convex hull yang dicari, program akan mengeluarkan output gambar seluruh convex hull beserta titik-titik lainnya dengan warna yang acak.
 
 ## Requirement Program
-Python 3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
+Python3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
 (Untuk menginstall library, gunakan command `pip install <nama-library>`)
 
 ## Cara Menggunakan Program
