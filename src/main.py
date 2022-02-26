@@ -4,6 +4,8 @@ import matplotlib.pyplot as plt
 from sklearn import datasets
 import random
 import sys
+import matplotlib.pyplot as plt
+from myConvexHull import MyConvexHull
 
 # Cek apakah terdapat argumen
 if len(sys.argv) >= 2:
@@ -43,31 +45,40 @@ else :
     print("Menggunakan kolom ke-1 sebagai sumbu y (default)")
 print()
 
-#create a DataFrame
+# Buat DataFrame
 df = pd.DataFrame(data.data, columns=data.feature_names)
 df['Target'] = pd.DataFrame(data.target)
 
-#visualisasi hasil ConvexHull
+# Visualisasi hasil ConvexHull
 try :
-    import matplotlib.pyplot as plt
-    from myConvexHull import MyConvexHull
+    # Atur ukuran dan label grafik
     plt.figure(figsize = (10, 6))
     plt.title(data.feature_names[x] + ' vs ' + data.feature_names[y])
     plt.xlabel(data.feature_names[x])
     plt.ylabel(data.feature_names[y])
+
+    # Cari convex hull untuk setiap target
     for i in range(len(data.target_names)):
         bucket = df[df['Target'] == i]
         bucket = bucket.iloc[:,[x,y]].values
 
+        # Bagian ini diganti dengan hasil implementasi ConvexHull Divide & Conquer
         hull = MyConvexHull(bucket) 
-        #bagian di atas diganti dengan hasil implementasi ConvexHull Divide & Conquer
-
+        
+        # Acak warna grafik
         color = '#' + str(hex(random.randint(48,160))[2::]) + str(hex(random.randint(48,160))[2::]) + str(hex(random.randint(48,160))[2::])
+        
+        # Plot semua titik
         plt.scatter(bucket[:, 0], bucket[:, 1], label=data.target_names[i], color=color)
+        
+        # Plot garis yang membentuk convex hull
         for simplex in hull.simplices:
             plt.plot(bucket[simplex, 0], bucket[simplex, 1], color)
+    
+    # Tampilkan grafik
     plt.legend()
     plt.show()
+
 except :
     print("Kolom dari dataset yang diberikan bukan merupakan bilangan")
     print("Tidak dapat membentuk convex hull")
