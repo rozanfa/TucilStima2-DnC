@@ -27,7 +27,7 @@ class MyConvexHull:
 
         # Jika dataset hanya berisi 2 titik, langsung return
         if len(self.ds) <= 2:
-            self.addToBotSimplices(p1, p2)
+            self.addToBotSimplices(self.ds[0], self.ds[1])
             return
 
         # Urutkan titik berdasarkan absis yang menaik
