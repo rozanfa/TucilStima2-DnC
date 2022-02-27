@@ -5,14 +5,14 @@
 Program ini berfungsi untuk mencari convex hull, yaitu himpunan convex terkecil (convex polygon) yang mengandung seluruh titik yang menjadi bagiannya. Program ini menggunakan algoritma divide and conquer. Setelah menemukan seluruh convex hull yang dicari, program akan mengeluarkan output gambar seluruh convex hull beserta titik-titik lainnya dengan warna yang acak.
 
 ## Requirement Program
-Python 3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
-(Untuk menginstall library, gunakan command `pip install <nama-library>`)
+Python3 dengan library numpy, pandas, matplotlib, sklearn, random, dan sys
+(Untuk menginstall library yang belum ada, gunakan command `pip install <nama-library>`)
 
 ## Cara Menggunakan Program
 Terdapat dua file yang dapat digunakan, yaitu file main.py dan main.ipynb
 
 ### A. main.ipynb
-Buka file ipynb di VSCode ataupun aplikasi serupa, kemudian jalankan "kolom" pertama dan "kolom kedua". Dataset yang digunakan bisa diganti pada code di baris kelima kolom pertama.
+Buka file main.ipynb di dalam folder src menggunakan VSCode ataupun aplikasi serupa, kemudian jalankan "kotak" pertama dan "kotak" kedua. Dataset yang digunakan bisa diganti pada code di baris kelima "kotak" pertama.
 
 ### B. main.py
 
@@ -32,6 +32,7 @@ Dengan :
 - arg2 : integer yang menyatakan kolom yang akan digunakan sebagai sumbu-x dari grafik
 - arg3 : integer yang menyatakan kolom yang akan digunakan sebagai sumbu-y dari grafik
 
+Jika tidak diberikan argumen, maka program akan berjalan dengan dataset default
 
 ## Author
 Rozan Fadhil Al Hafidz
